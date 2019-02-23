@@ -1,17 +1,17 @@
 package com.monotonic.generics._1_what_and_why_of_generics;
 
-public class CircularBuffer
+public class CircularBuffer<T>
 {
-    private final Object[] buffer;
+    private final T[] buffer;
     private int readCursor = 0;
     private int writeCursor = 0;
 
     public CircularBuffer(int size)
     {
-        buffer = new Object[size];
+        buffer = (T[]) new Object[size]; //cast new object to T array
     }
 
-    public boolean offer(Object value)
+    public boolean offer(T value)
     {
         if (buffer[writeCursor] != null)
         {
@@ -23,9 +23,9 @@ public class CircularBuffer
         return true;
     }
 
-    public Object poll()
+    public T poll()
     {
-        Object value = buffer[readCursor];
+        final T value = buffer[readCursor];
         if (value != null)
         {
             buffer[readCursor] = null;
