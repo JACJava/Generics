@@ -22,6 +22,7 @@ public class CircularBufferTest
     {
         assertTrue(buffer.offer(1));
         assertTrue(buffer.offer(2));
+        //assertTrue(buffer.offer(3));
         assertFalse(buffer.offer(3));
     }
 
