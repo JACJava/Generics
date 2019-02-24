@@ -11,9 +11,13 @@ public class TheArrayProblem
 
         Person[] madMen = { donDraper, peggyOlson };
 
-        System.out.println(Arrays.toString(madMen));
+        System.out.println(madMen);  //wow!  no easy toString implementation
 
-        madMen = add(new Person("Bert Cooper", 100), madMen);
+        System.out.println(Arrays.toString(madMen)); //have to use static class and call toString method
+
+        //  madMen[2] = bertCooper; Index out of bounds
+
+        madMen = add(new Person("Bert Cooper", 100), madMen); //so create a method
 
         System.out.println(Arrays.toString(madMen));
 
