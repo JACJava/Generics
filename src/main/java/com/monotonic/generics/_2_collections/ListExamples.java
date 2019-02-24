@@ -68,7 +68,7 @@ public class ListExamples
 
         //Use For Each Loop
         System.out.println();
-        System.out.println("*** Loop over the array list using for each loop***");
+        System.out.println("*** Loop over the array list using for each loop ***");
 
         int i3 = 0;
         for(Person person : madMen) {
@@ -79,5 +79,16 @@ public class ListExamples
 
         // Can still add duplicates though
         madMen.add(peggyOlson);
+
+        System.out.println();
+        System.out.println("*** Can still add duplicates, though ***");
+
+        int i4 = 0;
+        for(Person person : madMen) {
+            System.out.println("Person "+i4+":  "+person);
+            i4++;
+        }
+
+
     }
 }
