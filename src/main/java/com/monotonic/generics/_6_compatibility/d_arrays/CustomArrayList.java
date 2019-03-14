@@ -41,6 +41,7 @@ public class CustomArrayList<T> extends AbstractList<T>
 
     public static void main(String[] args)
     {
+
         Object[] array = new String[3];
         Integer[] otherArray = (Integer[]) array;
 

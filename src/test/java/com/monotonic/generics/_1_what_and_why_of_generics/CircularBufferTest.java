@@ -32,6 +32,7 @@ public class CircularBufferTest
         assertNull(buffer.poll());
     }
 
+
     @Test
     public void shouldRecycleBuffer()
     {
