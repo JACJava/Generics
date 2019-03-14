@@ -83,13 +83,21 @@ public class PersonStorageTest
     public void loadsListsOfPeople() throws Exception
     {
         saver.save(donDraper);
-        saver.save(bertCooper);
+        saver.save(peggyOlson);
 
+        //saver.save(bertCooper);
+
+        //List<Person> people = new ArrayList<>();
         List<Object> people = new ArrayList<>();
+
         loader.loadAll(people);
 
+        assertEquals(donDraper,people.get(0) );
+        assertEquals(peggyOlson,people.get(1) );
 
-        assertEquals(asList(donDraper, bertCooper), people);
+        //List<Object> people = new ArrayList<>();
+        //loader.loadAll(people);
+        //assertEquals(asList(donDraper, bertCooper), people);
     }
 
     @Before
