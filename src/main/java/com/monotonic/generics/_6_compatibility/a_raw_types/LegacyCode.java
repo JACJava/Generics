@@ -8,6 +8,10 @@ public class LegacyCode
 {
     public static void main(String[] args)
     {
+        //Added a comment
+        System.out.println("*** Added a comment ***");
+
+
         //"client" code dependent on list code
         System.out.println("*** Client code dependent on list code ***");
         List list2 = new ArrayList();
@@ -52,6 +56,9 @@ public class LegacyCode
             final Object element = iterator4.next();
             System.out.println("Element of Strings4 (again) is:  "+element);
         }
+
+        /* adding a comment here */
+        System.out.println("Adding a comment here");
 
 
         /*
